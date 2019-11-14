@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>LASTIG - Julien Perret - Homepage</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i">
+  <link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="vendor/academicons/css/academicons.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="css/resume.css" rel="stylesheet">
+  <link href="css/extras.css" rel="stylesheet">
+
+  <!-- scripts on load -->
+  <script src="vendor/d3/d3.min.js"></script>
+  <script src="js/reviewing.js" charset="utf-8"></script>
+  <script src="js/hal.js" charset="utf-8"></script>
+
+</head>
+
+<body id="page-top" onload="reviewingVis('reviewing.json'); getPublicationsAuthor('julien-perret');">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <select class="selectpicker" data-width="fit">
+      <option data-content='<span class="flag-icon flag-icon-us"></span>'>English</option>
+      <option data-content='<span class="flag-icon flag-icon-fr"></span>'>Français</option>
+    </select>
+    <a class="nav-link text-muted subheading" href="/website">LASTIG</a>
+    <a class="nav-link text-muted subheading" href="/geovis">GEOVIS</a>
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Julien Perret</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/julien.jpg" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#about">About</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#about">Présentation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#interest">Research Interests</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#interest">Sujets de recherche</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#news">News</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#news">Actualités</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#experience">Experience</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#experience">Parcours professionnel</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#education">Education</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#education">Formation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#publications">Publications</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#publications">Publications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#projects">Projects</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#projects">Projets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#other">Other research activities</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#other">Autres activités de recherche</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <div class="w-100">
+        <h1 class="mb-0">Julien
+          <span class="text-primary">Perret</span>
+        </h1>
+        <div class="subheading mb-5">73 avenue de Paris · 94165 Saint-Mandé CEDEX · (+33)1 43 98 62 37 ·
+          <a>jul<!--anti@spam.fr!-->ien.perret@ign.fr</a>
+        </div>
+        <p class="lead mb-5 lang-en">Senior researcher in Geographical Information Science.</p>
+        <p class="lead mb-5 lang-en">Member of the <a href="">STRUDEL</a> research team.</p>
+        <p class="lead mb-5 lang-fr">Directeur de recherche en sciences de l'information géographique.</p>
+        <p class="lead mb-5 lang-fr">Membre de l'équipe <a href="">STRUDEL</a></p>
+        <div class="social-icons">
+          <a href="https://www.researchgate.net/profile/Julien_Perret">
+            <i class="ai ai-researchgate"></i>
+          </a>
+          <a href="https://github.com/julienperret">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://scholar.google.fr/citations?user=c6PFPiUAAAAJ">
+            <i class="ai ai-google-scholar"></i>
+          </a>
+          <a href="#">
+            <i class="ai ai-publons"></i>
+          </a>
+          <a href="https://orcid.org/0000-0002-0685-0730">
+            <i class="ai ai-orcid"></i>
+          </a>
+          <a href="https://cv.archives-ouvertes.fr/julienperret">
+            <i class="ai"><img src="img/icons/hal-b2.svg" width=45px/></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+      <div class="w-100">
+        <h2 class="mb-5">Experience</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Senior Researcher (Directeur de Recherche)</h3>
+            <div class="subheading mb-3">LASTIG, IGN France</div>
+            <p>Description...</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">july 2019 - Present</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Researcher (Chargé de Recherche)</h3>
+            <div class="subheading mb-3">COGIT, IGN France</div>
+            <p>Description...</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">october 2007 - july 2019</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Postdoc researcher</h3>
+            <div class="subheading mb-3">INRIA Rocquencourt</div>
+            <p>Description...</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">january 2007 - september 2007</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">PhD student</h3>
+            <div class="subheading mb-3">Irisa - INRIA Rennes</div>
+            <p>Description...</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">2002 - 2006</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+      <div class="w-100">
+        <h2 class="mb-5">Education</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Université Paris-Est</h3>
+            <div class="subheading mb-3">Habilitation (HDR)</div>
+            <div>Geographical Information Science</div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">2016</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Université Rennes 1</h3>
+            <div class="subheading mb-3">PhD in Computer Science</div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">2006</span>
+          </div>
+        </div>
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">INSA</h3>
+            <div class="subheading mb-3">Engineering school</div>
+            <div>Computer Science</div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">2002</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Université Rennes 1</h3>
+            <div class="subheading mb-3">Master in Computer Science</div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">2002</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="publications">
+      <div class="w-100">
+        <h2 class="mb-5">Publications</h2>
+
+        <span id="pubACL"><div class="subheading mb-3 mt-3">[ACL] Journals</div></span>
+        <span id="pubACLN"><div class="subheading mb-3 mt-3">[ACLN] Journals</div></span>
+        <span id="pubASCL"><div class="subheading mb-3 mt-3">[ASCL] Others</div></span>
+        <span id="pubACTI"><div class="subheading mb-3 mt-3">[ACTI] Conferences</div></span>
+        <span id="pubACTN"><div class="subheading mb-3 mt-3">[ACTN] Conferences</div></span>
+        <span id="pubCOM"><div class="subheading mb-3 mt-3">[COM] Conferences</div></span>
+        <span id="pubOS"><div class="subheading mb-3 mt-3">[OS] Books and Chapters</div></span>
+        <span id="pubDO"><div class="subheading mb-3 mt-3">[DO] Books and Chapters</div></span>
+        <span id="pubAFF"><div class="subheading mb-3 mt-3">[AFF] Posters</div></span>
+        <span id="pubAP"><div class="subheading mb-3 mt-3">[AP] Preprints</div></span>
+        <span id="pubTH"><div class="subheading mb-3 mt-3">[TH] Dissertations</div></span>
+        <span id="pubINV"><div class="subheading mb-3 mt-3">[INV] Invited Talks</div></span>
+        <span id="pubPV"><div class="subheading mb-3 mt-3">[PV] Popularization</div></span>
+
+        <!-- provide a subset of the publications based on a keyword -->
+        <!--
+        <span id="pubGeneralisation"><div class="subheading mb-3 mt-3">Généralisation</div></span>
+	<script> getKeywordPublicationsAuthorStartYear('guillaume-touya', 'Généralisation', 2006, "pubGeneralisation"); </script>
+        -->
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
+      <div class="container">
+        <div class="row text-center title">
+          <h2>Projects</h2>
+        </div>
+        <div class="subheading mb-3">On-going and past research projects</div>
+        <div class="row projects">
+          <div class="col-md-4">
+            <div class="project">
+              <div class="icon-holder">
+                <img src="img/icons/timemachine.jpg" alt="" class="icon">
+              </div>
+              <h4 class="heading">TimeMachine</h4>
+              <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cut cut-bottom"></div>
+    </section>
+    
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="other">
+      <div class="w-100">
+        <h2 class="mb-5">Other research activities</h2>
+
+        <div class="subheading mb-3">Software development</div>
+
+        <div class="row projects">
+          <div class="col-md-4">
+            <div class="project">
+              <div class="icon-holder">
+                <img src="img/icons/Geoxygene-logo.png" alt="" class="icon">
+              </div>
+              <h4 class="heading">GeOxygene</h4>
+              <a class="description" href="https://github.com/IGNF/geoxygene">Yet another free and open-source GIS library.</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="subheading mb-3 mt-3">Supervisions</div>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check-square"></i>
+            Mickaël Brasebin (PhD, 2014), co-supervised with Sébastien Mustière (LASTIG)</li>
+          <li>
+            <i class="fa-li fa fa-check-square"></i>
+            Bertrand Duménieu (PhD, 2015), co-supervised with Anne Ruas (IFSTTAR) and Maurizio Gribaudi (EHESS)</li>
+          <li>
+            <i class="fa-li fa fa-square"></i>
+            Rémi Cura (PhD, 2016), co-supervised with Nicolas Paparoditis (LaSTIG) and Kevin Lyvan (Thales)</li>
+          <li>
+            <i class="fa-li fa fa-square"></i>
+            Benoît Costes (PhD, 2016), co-supervised with Bénédicte Bucher (LaSTIG) and Maurizio Gribaudi (EHESS)</li>
+          <li>
+            <i class="fa-li fa fa-square"></i>
+            Maxime Colomb (PhD, 2019), co-supervised with Cécile Tannier (ThéMA) and Mickaël Brasebin (LaSTIG)</li>
+        </ul>
+
+    </section>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/jquery.isotope.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.js"></script>
+
+</body>
+
+</html>

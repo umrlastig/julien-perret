@@ -1,0 +1,51 @@
+.fa-publons::before {
+  content: url('img/icons/publons-b.svg');
+}
+
+.imgLink {
+  float:right;
+}
+
+.author {
+  color: grey;
+}
+
+/* stylize an author by idHal ('span' is required to leave the ',' unaffected) */
+
+.author#guillaume-touya span {
+  text-decoration: underline;
+}
+
+.author:not(:last-child):after {
+  content: ", ";
+}
+
+.author:last-child:after {
+  content: ". ";
+}
+
+.title::after {
+  content: ". ";
+}
+
+
+.title {
+}
+
+.lang-fr {
+  display: none;
+}
+
+/* stylize all bibliography items (note the '*' to overwrite default styles of the parts)
+.bib * {
+  color: red;
+}
+*/
+
+/* stylize bibliographic item by HalId (note the '*' to overwrite default styles of the parts)
+.bib#hal-01883100 * {
+  color: red;
+}
+*/
+
+
