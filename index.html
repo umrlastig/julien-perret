@@ -28,12 +28,11 @@
 
   <!-- scripts on load -->
   <script src="vendor/d3/d3.min.js"></script>
-  <script src="js/reviewing.js" charset="utf-8"></script>
   <script src="https://www.umr-lastig.fr/strudel/assets/js/hal.js" type='text/javascript' charset="utf-8"></script>
 
 </head>
 
-<body id="page-top" onload="reviewingVis('reviewing.json'); getPublicationsAuthor('julienperret');">
+<body id="page-top" onload="getPublicationsAuthor('julienperret',baseImageUrl = 'img',yearOption = -1,options = publication_options,only_lastig_publications = false);">
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <select class="selectpicker" data-width="fit">
@@ -100,9 +99,9 @@
           <a>jul<!--anti@spam.fr!-->ien.perret@ign.fr</a>
         </div>
         <p class="lead mb-5 lang-en">Senior researcher in Geographical Information Science.</p>
-        <p class="lead mb-5 lang-en">Member of the <a href="">STRUDEL</a> research team.</p>
+        <p class="lead mb-5 lang-en">Member of the <a href="/strudel">STRUDEL</a> research team.</p>
         <p class="lead mb-5 lang-fr">Directeur de recherche en sciences de l'information géographique.</p>
-        <p class="lead mb-5 lang-fr">Membre de l'équipe <a href="">STRUDEL</a></p>
+        <p class="lead mb-5 lang-fr">Membre de l'équipe <a href="/strudel">STRUDEL</a></p>
         <div class="social-icons">
           <a href="https://www.researchgate.net/profile/Julien_Perret">
             <i class="ai ai-researchgate"></i>
@@ -269,11 +268,19 @@
           <div class="col-md-4">
             <div class="project">
               <div class="icon-holder">
-                <img src="img/icons/timemachine.jpg" alt="" class="icon">
+                <img src="https://soduco.geohistoricaldata.org/public/images/soduco_logo.png" alt="" class="icon">
               </div>
-              <h4 class="heading">TimeMachine</h4>
-              <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
+              <h4 class="heading">SoDUCo</h4>
+              <p class="description" href="https://soduco.geohistoricaldata.org/">Social Dynamics in Urban Context: Open tools, models and data - Paris and its suburbs, 1789-1950.</p>
             </div>
+          </div>
+          <div class="col-md-4">
+            <div class="project">
+            <div class="icon-holder">
+              <img src="img/icons/timemachine.jpg" alt="" class="icon">
+            </div>
+            <h4 class="heading">TimeMachine</h4>
+            <p class="description" href="https://www.timemachine.eu">Time Machine is aiming to join Europe’s rich past with up-to-date digital technologies and infrastructures, creating a collective digital information system mapping the European economic, social, cultural and geographical evolution across times..</p>
           </div>
         </div>
       </div>
@@ -319,10 +326,15 @@
             <i class="fa-li fa fa-check-square"></i>
             Maxime Colomb (PhD, 2019), co-supervised with Cécile Tannier (ThéMA) and Mickaël Brasebin (LaSTIG)</li>
           <li>
+            <i class="fa-li fa fa-check-square"></i>
+            Yizi Chen (PhD, 2023), co-supervised with Joseph Chazalon (EPITA) and Clément Mallet (LaSTIG)</li>
+          <li>
             <i class="fa-li fa fa-square"></i>
-            Yizi Chen (PhD, ongoing), co-supervised with Joseph Chazalon (EPITA) and Clément Mallet (LaSTIG)</li>
-        </ul>
-
+            Solenn Tual (PhD, 2022), co-supervised with Nathalie Abadie (LaSTIG), Joseph Chazalon (EPITA) and Bertrand Duménieu (EHESS)</li>
+          <li>
+            <i class="fa-li fa fa-square"></i>
+            Charly Bernard (PhD, 2022), co-supervised with Nathalie Abadie (LaSTIG) and Bertrand Duménieu (EHESS)</li>
+          </ul>
     </section>
 
   </div>
